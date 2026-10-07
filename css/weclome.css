@@ -1,0 +1,59 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* 全屏背景图，插画 */
+            background-image: url("../images/背景图1.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* 占满整个浏览器视口高度 */
+            /* 弹性布局，让中间弹窗垂直+水平居中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 中间半透明弹窗卡片 */
+        .welcome-card{
+            background:rgba(255,255,255,0.45);
+            backdrop-filter: blur(6px); /* 背景模糊，高级感！ */
+            border-radius:16px;
+            padding:40px 60px;
+            text-align:center;
+            color:#2c3e50;
+        }
+        /* 圆形头像 */
+        .avatar{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            object-fit:cover;
+            border:3px solid #fff;
+            margin-bottom:16px;
+        }
+        .name{
+            font-size:32px;
+            font-weight:bold;
+            margin-bottom:12px;
+        }
+        .text-desc{
+            line-height:1.7;
+            margin-bottom:30px;
+        }
+         /* Enter按钮样式  */
+        .enter-btn{
+            border:2px solid #fff;
+            background:transparent;
+            color:#fff;
+            font-size:22px;
+            border-radius:30px;
+            padding:10px 40px;
+            cursor:pointer;
+            transition: all 0.3s ease;
+        }
+        .enter-btn:hover{
+            background:rgba(255,255,255,0.35);
+        }

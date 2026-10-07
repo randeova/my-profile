@@ -1,0 +1,89 @@
+#top-nav{
+    width: 100%;
+    background-color: rgba(180, 210, 235, 0.55);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+.nav-wrap{
+    display: flex;
+    align-items: stretch;
+    padding-left: 40px;
+    width:100%;
+    box-sizing: border-box;
+}
+.logo{
+    color:#ffffff;
+    font-size:19px;
+    display: flex;
+    align-items: center;
+    flex-shrink:0;
+    padding-right: 40px;
+}
+.logo .LHR-text {
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+.nav-group{
+    /* margin-left:auto：自动吃掉logo和导航组中间所有空白，把导航组推到最右侧 */
+    margin-left: auto;
+    display: flex;
+    align-items: stretch;
+}
+/* 后代选择器 */
+#top-nav a{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+    padding: 0 24px;
+    height: 56px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 19px;
+
+    background-color: rgba(255, 255, 255, 0.08);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+#top-nav a:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    color:#94d8ff;
+}
+#top-nav a.active{
+    background-color: rgba(90, 150, 220, 0.9);
+    font-weight: 600;
+}                 
+/* 整个页面背景 */
+body {
+    background-image: url("../images/屏幕截图\ 2026-09-23\ 150406.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 56px; /* 给固定导航留出位置，文字不会被盖住 */
+    margin: 0;
+}
+#main-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(12, 165, 199, 0.5);
+    padding-top: 40px;
+}
+#intro-text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+#intro-text p {
+    color: rgba(12, 165, 199, 0.5);
+    font-size: 17px;
+    line-height: 2;
+    margin: 12px 0;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
